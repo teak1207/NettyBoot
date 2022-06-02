@@ -25,7 +25,9 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
-    implementation 'io.netty:netty-all:4.1.65.Final'
+    implementation group: 'io.netty', name: 'netty-all', version: '4.1.24.Final'
+
+
 }
 
 tasks.named('test') {
